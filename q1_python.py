@@ -19,9 +19,6 @@ def convertTemp(value, unit):
     if not isinstance(value, (int, float)):
         return -1
     
-    # Convert unit to uppercase, so that it can handle both lowercase and uppercase inputs, .upper() method is to convert the unit to upper case
-    unit = unit.upper()
-    
     # if the received unit is "C" - after the upper case conversion, then it will multiply the value by 9/5 and add 32 to convert it to Fahrenheit
     if unit == "C":
         result = (value * 9/5) + 32
