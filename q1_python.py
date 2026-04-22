@@ -15,7 +15,7 @@
     # Create a function called convertTemp, which receives a temperature value and its unit (C or F)
 def convertTemp(value, unit): 
      # Add your code here
-     # Check the type of variable value if it integer or decimal value, if not belong to these types return -1
+     # Check the type of variable value if it integer or decimal value, if not belong to these types then return -1
     if not isinstance(value, (int, float)):
         return -1
     
